@@ -40,7 +40,6 @@ public class MybatisPlusConfig {
      */
     @Bean
     public SqlSessionFactory sqlSessionFactory(DataSource dataSource, GlobalConfiguration globalConfiguration) throws Exception {
-        System.out.println("再次修改ssss");
         MybatisSqlSessionFactoryBean sqlSessionFactory = new MybatisSqlSessionFactoryBean();
         sqlSessionFactory.setDataSource(dataSource);
         sqlSessionFactory.setTypeAliasesPackage("com.baomidou.springboot.entity");
@@ -49,6 +48,7 @@ public class MybatisPlusConfig {
         configuration.setDefaultScriptingLanguage(MybatisXMLLanguageDriver.class);
         configuration.setJdbcTypeForNull(JdbcType.NULL);
         configuration.setMapUnderscoreToCamelCase(true);
+        System.out.println("再次修改ssss");
         sqlSessionFactory.setConfiguration(configuration);
         PaginationInterceptor pagination = new PaginationInterceptor();
         sqlSessionFactory.setPlugins(new Interceptor[]{
