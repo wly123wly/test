@@ -40,7 +40,7 @@ public class MybatisPlusConfig {
      */
     @Bean
     public SqlSessionFactory sqlSessionFactory(DataSource dataSource, GlobalConfiguration globalConfiguration) throws Exception {
-        System.out.println("ssssss");
+        System.out.println("再次修改");
         MybatisSqlSessionFactoryBean sqlSessionFactory = new MybatisSqlSessionFactoryBean();
         sqlSessionFactory.setDataSource(dataSource);
         sqlSessionFactory.setTypeAliasesPackage("com.baomidou.springboot.entity");
