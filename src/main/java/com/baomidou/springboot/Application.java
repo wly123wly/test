@@ -48,6 +48,8 @@ public class Application {
         app.run(args);
 //		SpringApplication.run(Application.class, args);
         logger.info("PortalApplication is success!");
+        logger.info("PortalApplication is success!");
+        logger.info("PortalApplication is success!");
         System.err.println("sample started. http://localhost:8080/user/test");
     }
 
